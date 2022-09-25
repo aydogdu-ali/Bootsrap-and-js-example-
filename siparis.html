@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gitar ve Piyano</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand text-danger ms-4" href="index.html"
+        >Müzik Market</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-3">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="index.html">Ana Sayfa </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="ürünlerimiz.html"
+              >Ürünlerimiz</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="hakkimizda.html">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="hakkimizda.html">Sipariş</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="text-center mt-5 bg-light">
+      <div id="products-preview">
+        <div id="product-painel">
+          <div class="products mt-5">
+            <div class="product">
+              <img src="img/drums-31359__340.webp" alt="" />
+              <div class="product-info">
+                <h2>Davul</h2>
+                <div class="Fiyat">
+                  <p><strong>12500</strong></p>
+                </div>
+
+                <div class="quantity-controller mb-3">
+                  <i class="fa-solid fa-minus"></i>
+                  <p class="Miktar">0</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="product-removal mt-3">
+                  <button class="remove-product">Kaldır</button>
+                </div>
+                <div class="product-line-price mt-5 fw-bolder">0</div>
+              </div>
+            </div>
+
+            <div class="product mt-5">
+              <img src="img/fender-stratocaster-6738902__340.jpg" alt="" />
+              <div class="product-info">
+                <h2>Gitar</h2>
+                <div class="Fiyat">
+                  <p>
+                    <strong>9300</strong>
+                  </p>
+                </div>
+                <div class="quantity-controller mb-3">
+                  <i class="fa-solid fa-minus"></i>
+                  <p class="Miktar">0</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="product-removal mt-3">
+                  <button class="remove-product">Kaldır</button>
+                </div>
+                <div class="product-line-price mt-5 fw-bolder">0</div>
+              </div>
+            </div>
+
+            <div class="product mt-5">
+              <img src="img/grand-piano-161447__340.webp" alt="piyano" />
+              <div class="product-info">
+                <h2>Piyano</h2>
+                <div class="Fiyat">
+                  <p>
+                    <strong>5000</strong>
+                  </p>
+                </div>
+                <div class="quantity-controller">
+                  <i class="fa-solid fa-minus"></i>
+                  <p class="Miktar">0</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="product-removal mt-3">
+                  <button class="remove-product">Kaldır</button>
+                </div>
+                <div class="product-line-price mt-5 fw-bolder">0</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="buy-detail fw-bolder border border-1 w-25 mx-auto mt-3"
+            id="cart-subtotal"
+          >
+            <p>Ara Toplam</p>
+            <p>0</p>
+          </div>
+          <div
+            class="buy-detail border border-1 w-25 text-center mx-auto"
+            id="cart-tax"
+          >
+            <p>Vergi(%18)</p>
+            <p>0</p>
+          </div>
+
+          <div
+            class="buy-detail fw-bolder text-danger border border-1 w-25 text-center mx-auto"
+            id="cart-total"
+          >
+            <p>Toplam</p>
+            <p class="fw-bolder text-dark h2">0</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-success mt-3 mb-5 lg">Ödeme Sayfasına Git</button>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js.js"></script>
+  </body>
+</html>
